@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+        };
+        button {
+            transform: translateX(2000%);
+        }
+        .background {
+            border: 1px solid black;
+        }
+        .image1,.image2,.image3 {
+            height: 100px;
+            animation: zoom 0.5s linear;
+        }
+        @keyframes zoom {
+            from {transform: translateX(-20%);}
+            to {transform: translateX(0);}
+        }
+        .image1 {
+            background: url('./img/gallery/tet.jpg');
+            /* transform: translateX(-100%);
+            display: none; */
+        }
+
+        .image2 {
+            background: url('./img/gallery/tet2.jpg');
+            /* transform: translateX(-100%);
+            display: none; */
+
+        }
+
+        .image3 {
+            background: url('./img/gallery/tet3.jpg');
+            /* transform: translateX(-100%);
+            display: none; */
+
+        }
+
+        .image1.show,.image2.show,.image3.show  {
+            transform: translateX(0);
+            transition: 0.5s;
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+        <button >click here</button>
+        <a href="./index.html">link</a>
+
+        <div class="background">
+            <div class="image1"></div>
+            <div class="image2"></div>
+            <div class="image3"></div>
+        </div>
+        <!-- <div class="background">
+        </div>
+        <div class="background">
+        </div> -->
+
+    <script src="test.js">
+        
+    </script>
+</body>
+</html>
